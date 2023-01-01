@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font: 400 1.2rem/1.2 'Caveat', cursive;    
+}
+
+body{
+    background-color: hsl(54, 100%, 96%);
+    background-image: url('./background.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+article {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+    padding: 0.5in 0;
+}
+
+article * {
+    grid-column: start / end;
+    background-color: white;
+
+}
+
+p {
+    text-align: justify;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+figure{
+    margin-bottom: 0;
+}
+
+figcaption {
+    text-align: center;
+}
+
+h2, h3{
+    color: purple;
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.end-text{
+    font-weight: bold;
+}
+
+.end-para{
+    margin-top: 0;
+}
+
+.main-title{
+    font-weight: bold;
+    text-decoration: none;
+    color: purple;
+    font-size: 2em;
+}
+
+.main-title span{
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(192, 192, 34);
+    font-size: 2em;
+}
+
+@media screen and (max-width: 8.5in) {
+    article {
+        grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr;
+    }
+}

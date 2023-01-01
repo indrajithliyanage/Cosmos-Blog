@@ -1,0 +1,1 @@
+A simple website to practice CSS debug and reset
